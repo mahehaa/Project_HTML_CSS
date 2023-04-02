@@ -10,62 +10,101 @@
 </head>
 <body>
     <!-- Tambahkan kode kalian di sini -->
-    <section class="header">
+    <section class="header show">
         <nav>
             <ul> 
                 <li><a  href="" class="btn active">Home</a></li>
-                <li><a href="" class="btn">About Me</a></li>
+                <li><a href="../main/about.html" class="btn">About</a></li>
                 <li><a href=""class="btn">Project</a></li>
                 <li><a href=""class="btn">Blog</a></li>
             </ul> 
+            <div class="next">
+                <a href="#footer"><iconify-icon icon="ooui:arrow-next-ltr"></iconify-icon></a>
+            </div>
         </nav>
     </section>
 
-    <section class="main">
-        <a href="">
-            <div class="container">
+    <section class="main-head">
+        <div id="myName" class="show">
+            <h1>MY</h1>
+            <h1>PORTFOLIO</h1>
+            <h1>WEBSITE</h1>
+            <div class="iconSosmed-head">
+                <a href="https://instagram.com/masehnr/"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                <a href="https://wa.me/6285719874243"><iconify-icon icon="ic:baseline-whatsapp"></iconify-icon></a>
+                <a href="https://t.me/mahemeh0_0"><iconify-icon icon="la:telegram-plane"></iconify-icon></a>
+                <a href="https://github.com/mahemeh"><iconify-icon icon="mdi:github"></iconify-icon></a>
+            </div>
+        </div>
+        <a href="../main/about.html" class="show">
+            <div class="container container-aboutMe">
                 <div>
                     <div class="aboutMe">
                         <h4>'Ello mate!, it's me</h4>
                         <h1>Mahesa Nur Alamsyah</h1>
-                        <p>let's know About me, click here</p>        
+                        <p id="intro">i'm so interest in Web Development and Design. Check out my web portfolio to see some of my work!</p>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="">
-            <div class="container">
+        <a href="" class="show">
+            <div class="container container-project">
                 <div class="project">
                     <h1>There is My Project</h1>
                     <div>
-                        <h4>Landing Page Website</h4>                   </div>
+                        <h4><span><iconify-icon icon="material-symbols:arrow-right"></iconify-icon>
+                        </span>Landing Page Website</h4>
+                    </div>
                     <div>
-                        <h4>Landing Page Website</h4>                   </div>
+                        <h4><span><iconify-icon icon="material-symbols:arrow-right"></iconify-icon>
+                        </span>Portfolio Website</h4>                   
+                    </div>
                     <div>
-                        <h4>Landing Page Website</h4>                   </div>
-                </div>
-            </div>
-        </a>
-        <a href="">
-            <div class="container">
-                <div class="blog">
-
+                        <h4><span><iconify-icon icon="material-symbols:arrow-right"></iconify-icon>
+                        </span>BMI Calculate Web Apps</h4>
+                    </div>
+                    <p>See more</p>
                 </div>
             </div>
         </a>
     </section>
-    <section class="footer">
-        <div class="container">
-            <div class="author">@MahesaN_2023</div>
-            <div class="iconSosmed">
-                <a href=""><iconify-icon icon="ic:baseline-whatsapp"></iconify-icon></a>
-                <a href=""><iconify-icon icon="mdi:instagram"></iconify-icon></a>
-                <a href=""><iconify-icon icon="mdi:github"></iconify-icon></a>
+
+    <section class="main-body">
+        <div class="content-head">
+           <a href="#"><iconify-icon icon="ooui:arrow-next-rtl"></iconify-icon></a> 
+           <h1>Welcome</h1>
+        </div>
+        <div class="content">
+            <div>
+                <h1><span><iconify-icon icon="ph:sun-dim-fill"></iconify-icon>
+                </span>My Project</h1>
+                <p>you can see all my work on this! <span><a href="">My Project</a></span></p>
+            </div>
+            <div>
+                <h1><span><iconify-icon icon="ph:sun-dim-fill"></iconify-icon>
+                </span>This Website</h1>
+                <p>Hi there, thank you for dropping by!. This is My First Web Portfolio, I plan to keep updating this website with my progress, everything that I'm learning, and all the cool stuff that catches my interest. Hopefully, you'll find it just as fascinating as I do!</p>
+            </div>
+            <div>
+                <h1><span><iconify-icon icon="ph:sun-dim-fill"></iconify-icon>
+                </span>My Blog</h1>
+                <p>I'm also planning to write something on the <span><a href="">My Blog Page</a></span>, so stay tuned!</p>
             </div>
         </div>
     </section>
+    <section class="footer" id="footer">
+        <div class="container-footer">
+            <div class="iconSosmed-footer">
+                <a href="https://instagram.com/masehnr/"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                <a href="https://wa.me/6285719874243"><iconify-icon icon="ic:baseline-whatsapp"></iconify-icon></a>
+                <a href="https://t.me/mahemeh0_0"><iconify-icon icon="la:telegram-plane"></iconify-icon></a>
+                <a href="https://github.com/mahemeh"><iconify-icon icon="mdi:github"></iconify-icon></a>
+            </div>
+            <div class="author">@ 2023 - Mahesa N.</div>
+        </div>
+    </section>
     <!-- script -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>

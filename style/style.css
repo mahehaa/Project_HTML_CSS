@@ -1,26 +1,52 @@
 * {
     margin: 0;
     padding: 0;
-    color: #fffffe;
-    font-family: 'Poppins';font-size: 22px;
+    font-family: 'Poppins';
 }
 
 /* Global */
 
 body {
-    background-color: #1f1f1f;
+    background-color: #fffffe;
 }
 
 a {
     text-decoration: none;
 }
 
+@keyframes show {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0);}
+}
+
+.show {
+    animation-name: show;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
 /* Global */
 
 .header {
-    margin-bottom: 70px;
-    width: 50%;
-    border-bottom: 3px solid #fffffe;
+    width: 100%;
+    background-color: #fffffe;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .next {
+    font-size: 48px;
+    padding: 20px;
+}
+
+nav .next a {
+    color: #272343;
+}
+
+nav .next a:hover {
+    color: #ffd803;
 }
 
 nav ul {
@@ -37,32 +63,81 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-weight: lighter;
-    color: #fffffe;
+    color: #272343;
     font-size: 32px;
 }
 
-.main {
+nav ul li a:hover {
+    color: #ffd803;
+}
+
+nav .active{
+    color: #ffd803;
+    border-bottom: 2px solid #272343;
+}
+
+.main-head {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fffffe;
 }
 
-.main .container {
+.main-head .container {
     height: 400px;
-    width: 400px;
-    padding: 20px 45px;
-    border: 0.1px solid #4b4b4b;
+    width: 350px;
+    padding: 30px 30px;
+    color: #272343;
+    background-color: #bae8e8;
+    border-radius: 30px;
+    box-shadow: 2px 4px 5px #272343;
 }
 
-.main .container:hover {
-    height: 400px;
-    width: 400px;
-    padding: 20px 45px;
-    border: 2px solid #fffffe;
-    transition: border ease-in-out 0.5s;
-    transition: background-color ease-in-out 0.3s;
-    background-color: #4b4b4b;
-    opacity: 0.5px;
+.main-head .container:hover {
+    color: #bae8e8;
+    background-color: #272343; 
+    transition: background-color 0s ease-in,
+    border 0.3s ease-in, color 0.3s ease-in,
+    transform 0.3s ease-out;
+    transform: translate(0, -10px);
+    border-radius: 30px;
+    box-shadow: 2px 4px 5px #272343;
+}
+
+.main-head #myName {
+    align-self: baseline;
+    cursor: default;
+    color: #272343;
+    width: 35%;
+    font-size: 48px;
+    margin: 0 35px;
+}
+
+.main-head .iconSosmed-head {
+    width: 60%;
+    border-top: 4px solid #272343;
+    margin-top: 55px;
+}
+
+.main-head .iconSosmed-head a {
+    color: #272343;
+    font-size: 48px;
+}
+
+.main-head .iconSosmed-head a:hover {
+    color: #ffd803;
+    font-size: 48px;
+}
+
+.main-head .container-aboutMe {
+    margin-right: 25px;
+}
+
+.main-head .container-project {
+    margin-right: 25px;
 }
 
 .aboutMe h1 {
@@ -70,32 +145,136 @@ nav ul li a {
 }
 
 .aboutMe p {
-    display: flex;
-    margin-top: 26vh;
-    font-weight: lighter;
+    font-size: 22px;
 }
 
 .project h1 {
     font-size: 48px;
 }
 
+.project p {
+    font-size: 22px;
+    width: 35%;
+}
+
+.project p:hover {
+    transition: color 0.3s ease-in;;
+    color:#ffd803;
+    font-size: 22px;
+}
+
 .project div {
     display: flex;
     justify-content: left;
+    font-weight: lighter;
     margin: 10px 0;
-    padding: 20px;
-    border-bottom: 1px solid #fffffe;
+    padding: 10px;
+    border-bottom: 1px solid #3d3c3c;
+    font-size: 22px;
+}
+
+.project div:hover {
+    color: #272343;
+    border-bottom: 1px solid #3d3c3c;
+    background-color: #ffd803;
+    transition: background-color 0.5s ease-in,
+    border 0.5s ease-in, color 0.3s ease-in;
+}
+
+
+
+
+.main-body {
+    background-color: #bae8e8;
+    color: #272343;
+    display: block;
+    text-align: center;
+    cursor: default;
+    height: 100%;
+}
+
+.main-body .content-head {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    padding: 55px 0 45px 0;
+}
+
+.main-body .content-head a {
+    font-size: 48px;
+    position: absolute;
+    color: #272343;
+    left: 35px;
+}
+
+.content-head a:hover {
+    color: #ffd803;
+}
+
+.main-body .content {
+    display: flex;
+    margin-top: 45px;
+}
+
+.main-body .content div {
+    text-align: left;
+    color: #fffffe;
+    width: 100%;
+    padding: 30px;
+    margin: 0 25px 45px 25px;
+    background-color: #272343;
+    border-radius: 20px;
+}
+
+.main-body .content h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.main-body .content h1 span {
+    color: #ffd803;
+}
+
+.main-body .content p {
+    padding-bottom: 4px;
+}
+
+.content p span a {
+    color: #bae8e8;
+    text-decoration: underline;
+}
+
+.content p span a:hover {
+    font-weight: bold;
+    color: #ffd803;
 }
 
 .footer {
-    position: absolute;
-    display: flex;
-    text-align: right;
-    justify-content: right;
-    width: 50%;
+    display: flex;;
+    justify-content: center;
+    color: #272343;
+    background-color: #bae8e8;
+    width: 100%;
     right: 0px;
-    margin-top: 70px;
-    padding-top: 20px;
-    padding-right: 40px;
-    border-top: 4px solid #fffffe;
+    border-top: 2px solid #272343;
+}
+
+.footer .container-footer {
+    padding: 20px 0 0 0;
+    text-align: center
+}
+
+.footer .author {
+    padding-bottom: 20px;
+}
+
+.footer .iconSosmed-footer a {
+    color: #272343;
+    margin: 0 15px;
+    font-size: 48px;
+}
+
+.footer .iconSosmed-footer a:hover {
+    color: #ffd803;
 }
