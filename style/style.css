@@ -5,27 +5,14 @@
 }
 
 /* Global */
-
-body {
-    background-color: #fffffe;
-}
-
 a {
     text-decoration: none;
 }
-
-@keyframes show {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(0);}
-}
-
-.show {
-    animation-name: show;
-    animation-duration: 2s;
-    animation-delay: 2s;
-}
 /* Global */
 
+/* Header */
+
+    /* Navbar */
 .header {
     width: 100%;
     background-color: #fffffe;
@@ -34,6 +21,7 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 nav .next {
@@ -63,19 +51,21 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #272343;
+    color: #8e8e91;
     font-size: 32px;
 }
 
 nav ul li a:hover {
-    color: #ffd803;
+    color: #272343;
 }
 
 nav .active{
-    color: #ffd803;
+    color: #272343;
     border-bottom: 2px solid #272343;
+    font-weight: bold;
 }
 
+/* Hero */
 .main-head {
     display: flex;
     justify-content: center;
@@ -119,6 +109,7 @@ nav .active{
 .main-head .iconSosmed-head {
     width: 60%;
     border-top: 4px solid #272343;
+    padding-top: 15px;
     margin-top: 55px;
 }
 
@@ -181,9 +172,7 @@ nav .active{
     border 0.5s ease-in, color 0.3s ease-in;
 }
 
-
-
-
+/* Main Content */
 .main-body {
     background-color: #bae8e8;
     color: #272343;
@@ -238,6 +227,7 @@ nav .active{
 
 .main-body .content p {
     padding-bottom: 4px;
+    color: #a9a9be;
 }
 
 .content p span a {
@@ -250,14 +240,19 @@ nav .active{
     color: #ffd803;
 }
 
+/* Footer */
 .footer {
-    display: flex;;
-    justify-content: center;
+    display: block;
+    text-align: center;
     color: #272343;
     background-color: #bae8e8;
     width: 100%;
     right: 0px;
     border-top: 2px solid #272343;
+}
+
+.footer .contactMe {    
+    padding: 20px 0 0 0;
 }
 
 .footer .container-footer {
@@ -271,8 +266,8 @@ nav .active{
 
 .footer .iconSosmed-footer a {
     color: #272343;
-    margin: 0 15px;
-    font-size: 48px;
+    margin: 0 8px;
+    font-size: 32px;
 }
 
 .footer .iconSosmed-footer a:hover {
