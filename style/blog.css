@@ -65,49 +65,41 @@ nav .active{
     font-weight: bold;
 }
 
+.mainBlog {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
 
-/* Body */
-.container {
-    display: flex;
-    justify-content: space-evenly;
+.containerBlog {
+    margin-left: 15vh;
+    padding-bottom: 40px;
+}
+
+.containerBlog .blogContent {
+    cursor: pointer;
+    width: 75%;
     margin: 20px 40px;
-}
-
-.container .text-content {
-    display: block;
-    width: 50%;
-}
-
-.container .text-content div {
-    margin: 25px 55px 25px 0;
     padding: 20px;
     border-bottom: 2px solid #272343;
-    cursor: default;
 }
 
-.container .text-content div:hover {
+.containerBlog .blogContent:hover {
     border-radius: 20px;
-    padding: 20PX;
-    transform: translateY(-15px);
     color: #bae8e8;
+    transform: translateY(-10px);
     background-color: #272343;
-    transition: color 0.5s ease-in, 
-    background-color 0.5s ease-in,
-    transform 1s ease-in;
-    cursor: default;
-    box-shadow: 2px 4px 5px #272343;
+    box-shadow: 1px 1px 4px #272343;
+    transition: background-color 0.3s ease-in,
+    color 0.5s ease-in, transform 0.5s ease-in;
 }
 
-.container .image img {
-    margin-top: 10vh;
-    border-right: 5px solid #272343;;
-    border-bottom: 5px solid #272343;
-    box-shadow: 1px 4px 5px #272343;
+.blogContent h1 {
+    width: max-content;
+    margin-bottom: 15px;
 }
 
-.container .image img:hover {
-    background-color: #272343;
-    transition: background-color 0.5s ease-in;
+.blogImage {
+    margin-right: 25vh;
 }
 
 /* Footer */
