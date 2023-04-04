@@ -119,6 +119,7 @@ nav .active{
     width: 100%;
     right: 0px;
     border-top: 2px solid #272343;
+    margin-top: 15vh;
 }
 
 .footer .contactMe {    
